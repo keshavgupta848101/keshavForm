@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESULT</title>
+</head>
+<body>
+    <h1>Database</h1>
+    <table
+   <%for(let data of userdataFound){%>
+>
+        <tr>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>Msg</th>
+          </tr>
+          <tr>
+            <td><%=data.fname%></td>
+            <td><%=data.lname%></td>
+            <td><%=data.email%></td>
+            <td><%=data.mob%></td>
+            <td><%=data.msg%></td>
+          </tr>
+
+    
+
+
+  <% }%>
+</table>        
+
+<a href="/">GO back to form</a>
+</body>
+</html>
