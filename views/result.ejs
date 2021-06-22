@@ -1,37 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RESULT</title>
-</head>
-<body>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: initial;
+      }
+    </style>
+  </head>
+  <body>
     <h1>Database</h1>
-    <table
-   <%for(let data of userdataFound){%>
->
-        <tr>
-            <th>First name</th>
-            <th>Last name</th>
-            <th>Email</th>
-            <th>Mobile</th>
-            <th>Msg</th>
-          </tr>
-          <tr>
-            <td><%=data.fname%></td>
-            <td><%=data.lname%></td>
-            <td><%=data.email%></td>
-            <td><%=data.mob%></td>
-            <td><%=data.msg%></td>
-          </tr>
+    <table>
+      <!-- for (const property in object) {
+  console.log(`${property}: ${object[property]}`);
+   console.log(.secondQus); 
+} -->
 
-    
+      <% for (const property in qusSet1) { %> 
+        
+        <%for(let data of ansSet){%>
 
+      <tr>
+        <th><%= qusSet1[property].firstQus %></th>
+        <th><%= qusSet1[property].secondQus %></th>
+        <th><%= qusSet1[property].thirdQus %></th>
+        <th><%= qusSet1[property].fourthQus %></th>
+        <th><%= qusSet1[property].fifthQus %></th>
+      </tr>
+      <tr>
+        <td><%=data.firstAns%></td>
+        <td><%=data.secondAns%></td>
+        <td><%=data.thirdAns%></td>
+        <td><%=data.fourthAns%></td>
+        <td><%=data.fifthAns%></td>
+      </tr>
+      <% } %>
 
-  <% }%>
-</table>        
+            <% } %>
 
-<a href="/">GO back to form</a>
-</body>
+    </table>
+
+    <a href="/form">GO back to form</a>
+  </body>
 </html>

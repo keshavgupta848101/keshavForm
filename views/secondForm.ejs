@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Demo</title>
+    <link rel="stylesheet" href="/style.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+    
+    <!-- <form action="/" method="post">
+        <label for="fname">First name</label>
+        <input type="text" name="fname"> <br> <br>
+        <label for="lname">Last name</label>
+        <input type="text" name="lname"><br> <br>
+        <label for="email">Email: </label>
+        <input type="email" name="email"><br> <br>
+        <label for="mob">Mobile: </label>
+        <input type="number" name="mob"><br> <br>
+        <label for="msg">MSG: </label>
+        <textarea name="msg" id="" cols="30" rows="10"></textarea>
+        <button type="submit">Submit</button>
+    </form> -->
+    <div>
+    <form action="/form" method="post">
+
+        <div class="mb-3" >
+          <label for="fname" class="form-label"><%= qusSet.firstQus %></label>
+          <input type="<%= qusSet.list1 %>" class="form-control" name="firstAns" id="firstQus" aria-describedby="emailHelp">
+        </div>
+      
+
+        <div class="mb-3">
+            <label for="lname" class="form-label"><%= qusSet.secondQus %></label>
+            <input type="<%= qusSet.list2 %>" class="form-control" name="secondAns" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"><%= qusSet.thirdQus %></label>
+            <input type="<%= qusSet.list3 %>" class="form-control" name="thirdAns" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="mob" class="form-label"><%= qusSet.fourthQus %></label>
+            <input type="<%= qusSet.list4 %>" class="form-control" name="fourthAns" id="fourthQus" aria-describedby="emailHelp">
+          </div>
+
+           <div class="mb-3">
+            <label for="mob" class="form-label"><%= qusSet.fifthQus %></label>
+            <input type="<%= qusSet.list5 %>" class="form-control" name="fifthAns" id="fifthQus" aria-describedby="emailHelp">
+          </div>    
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+      <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

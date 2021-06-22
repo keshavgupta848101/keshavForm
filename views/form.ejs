@@ -25,32 +25,32 @@
         <button type="submit">Submit</button>
     </form> -->
     <div>
-    <form action="/" method="post">
+    <form action="/form" method="post">
+
         <div class="mb-3" >
-          <label for="fname" class="form-label">First Name</label>
-          <input type="text" class="form-control" name="fname" id="fname" aria-describedby="emailHelp">
+          <label for="fname" class="form-label"><%= qusSet.firstQus %></label>
+          <input type="<%= qusSet.list1 %>" class="form-control" name="firstAns" id="firstQus" aria-describedby="emailHelp">
         </div>
+      
+
         <div class="mb-3">
-            <label for="lname" class="form-label">Last Name</label>
-            <input type="text" class="form-control" name="lname" aria-describedby="emailHelp">
+            <label for="lname" class="form-label"><%= qusSet.secondQus %></label>
+            <input type="<%= qusSet.list2 %>" class="form-control" name="secondAns" aria-describedby="emailHelp">
           </div>
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" name="email" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <label for="exampleInputEmail1" class="form-label"><%= qusSet.thirdQus %></label>
+            <input type="<%= qusSet.list3 %>" class="form-control" name="thirdAns" aria-describedby="emailHelp">
           </div>
           <div class="mb-3">
-            <label for="mob" class="form-label">Mobile</label>
-            <input type="number" class="form-control" name="mob" id="mob" aria-describedby="emailHelp">
+            <label for="mob" class="form-label"><%= qusSet.fourthQus %></label>
+            <input type="<%= qusSet.list4 %>" class="form-control" name="fourthAns" id="fourthQus" aria-describedby="emailHelp">
           </div>
-          <div class="mb-3">
-            <label for="msg">MSG: </label> <br>
-            <textarea name="msg" id="" cols="100" rows="10"></textarea>
-          </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>        
+
+           <div class="mb-3">
+            <label for="mob" class="form-label"><%= qusSet.fifthQus %></label>
+            <input type="<%= qusSet.list5 %>" class="form-control" name="fifthAns" id="fifthQus" aria-describedby="emailHelp">
+          </div>    
+
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
     </div>
